@@ -1,0 +1,19 @@
+// Find the HCF of two numbers
+
+#include <iostream>
+using namespace std;
+int hcf(int a, int b) {
+    if (b == 0)
+        return a;
+    return hcf(b, a % b);
+}
+
+int main() {
+    int num1, num2;
+    cout << "Enter two numbers: ";
+    cin >> num1 >> num2;
+  
+    int result = hcf(num1, num2);
+    cout << "HCF of " << num1 << " and " << num2 << " is " << result << endl;
+    return 0;
+}
