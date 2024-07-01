@@ -86,3 +86,42 @@ using namespace std;
      }
      cout << "max out of " <<a<< " " <<b<< " " <<c<< " is " << max; 
  }
+
+//4.EXAMPLE
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "enter the number :";
+    cin >>n;
+    int count = 0;
+    for (int i =1; i<= n; i++) {
+        if (n%i == 0) {
+            cout << i << " ";
+            count ++;
+        }
+    }
+    cout << " \n count of devisor : " << count;
+    return 0;
+}
+
+// 5. EXAMPLE
+
+#include <iostream>
+using namespace std;
+int main() 
+{
+    int n;
+     cout << "enter the number :";
+     cin >>n;
+     int count = 0;
+     while (n>0) {
+         n = n/10;
+         count ++;  
+     }
+     cout << " count of digits :" << count;
+     return 0;
+ }
