@@ -1,0 +1,19 @@
+// Maiing a array program 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr [8];
+    cout <<"enter the values to store in an array :";
+
+    for(int i = 0; i < 8; i++) {
+        cin >> arr [i];
+    }
+    cout<< " the array is :";
+
+    for(int i = 0; i < 8; i++){
+        cout << arr [i] << " ,";
+    }
+    return 0;
+}
