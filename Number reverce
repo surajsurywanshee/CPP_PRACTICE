@@ -1,0 +1,19 @@
+// Number Revercing Program
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  int n, reverce=0, reminder;
+  cout<< " entet a number :";
+  cin>>n;
+   
+  while (n>0){
+      reminder = n%10;
+      reverce = reverce*10 + reminder;
+      n= n/10;
+  }
+          cout<< reverce << endl;
+    return 0;
+}
+
