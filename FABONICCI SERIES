@@ -1,0 +1,53 @@
+// 1. Integer variable DATATYPE
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int num, feb = 0, a = 0, b = 1;
+    cout<<" Enter the number to find the febonacci series:" ;
+    cin >> num;
+     for (int i = 1 ; i <= num ; i++) {
+         if (i==0) {
+             cout<< a <<"\t";
+             continue;
+         }
+         if (i==1){
+             cout<< b <<"\n";
+             continue;
+         }
+         feb = a+b;
+         a=b;
+         b= feb;
+         cout << feb << "\t";  
+     }
+    return 0;
+}
+
+// 2nd LONG type variable DATATYPE
+
+#include <iostream>
+using namespace std;
+int main()
+{
+   long long num, feb = 0, a = 0, b = 1;
+    cout<<" Enter the number to find the febonacci series:" ;
+    cin >> num;
+
+     for (int i = 1 ; i <= num ; i++) {
+         if (i==0) {
+             cout<< a <<"\t";
+             continue;
+         }
+         if (i==1){
+             cout<< b <<"\n";
+             continue;
+         }
+         feb = a+b;
+         a=b;
+         b= feb;
+         cout << feb << "\t"; 
+     }
+    return 0;
+}
